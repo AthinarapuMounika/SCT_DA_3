@@ -69,7 +69,8 @@ SCT_DA_3/
 │
 └── README.md
 # Dashboard image
-"C:\Users\shyam\OneDrive\Pictures\Screenshots\HR dashboard.png"
+<img width="996" height="568" alt="HR dashboard" src="https://github.com/user-attachments/assets/c60eeabb-7581-4176-87ed-ae20fd7c8a90" />
+
 
 ## Internship Task
 **SkillCraft Technology – Data Analytics Internship**
