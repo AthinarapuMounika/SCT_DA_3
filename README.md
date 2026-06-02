@@ -1,72 +1,62 @@
 # SCT_DA_3 - HR Employee Attrition Dashboard
-Project Overview
 
-This project is an interactive HR Employee Attrition Dashboard developed using Power BI. The dashboard analyzes employee attrition patterns and helps identify the key factors contributing to employee turnover.
+## Project Overview
+This project is developed as part of the **SkillCraft Technology Data Analytics Internship (Task 03)**.
 
-The objective is to answer the question:
+The dashboard is built using **Power BI** to analyze employee attrition and identify the factors influencing employee turnover. It provides interactive visualizations and filters that help answer the business question:
 
-"Why are employees leaving the organization?"
+**"Why are employees leaving the organization?"**
 
-Dataset
-Dataset: IBM HR Analytics Employee Attrition Dataset
-Format: CSV
-Records: Employee demographic, job, salary, satisfaction, and attrition information.
-Tools Used
-Power BI Desktop
-Power Query Editor
-DAX (Data Analysis Expressions)
-Dashboard Features
-KPI Cards
-Total Employees
-Attrition Count
-Attrition Rate (%)
-Visualizations
-Attrition Count by Department
-Attrition Count by Age Group
-Attrition Count by Job Satisfaction
-Overtime Analysis (Pie Chart)
-Interactive KPI Metrics
-Interactive Filters (Slicers)
-Department
-Age Group
-Job Role
-Key Insights
-Research & Development department has the highest attrition.
-Employees working overtime are more likely to leave.
-Adult age group contributes the highest attrition count.
-Lower job satisfaction is associated with increased attrition.
-Overall attrition rate is approximately 22.84%.
-DAX Measures Used
-Total Employees
-Total Employees =
-COUNT('WA_Fn-UseC_-HR-Employee-Attrition'[EmployeeNumber])
-Attrition Count
-Attrition Count =
-CALCULATE(
-    COUNT('WA_Fn-UseC_-HR-Employee-Attrition'[Attrition]),
-    'WA_Fn-UseC_-HR-Employee-Attrition'[Attrition] = "Yes"
-)
-Attrition Rate
-Attrition Rate % =
-DIVIDE([Attrition Count], [Total Employees])
-Project Workflow
-Imported HR Attrition Dataset into Power BI.
-Cleaned and transformed data using Power Query.
-Created Age Group categories.
-Developed DAX measures for KPIs.
-Built interactive visualizations.
-Added slicers for dynamic filtering.
-Derived insights from attrition trends.
-Dashboard Objective
+## Dataset
+- IBM HR Analytics Employee Attrition Dataset
+- File Format: CSV
+- Total Employees: 289
+- Attrition Count: 66
+- Attrition Rate: 22.84%
 
-The dashboard enables HR teams and management to:
+## Tools Used
+- Power BI Desktop
+- Power Query Editor
+- DAX
 
-Monitor employee turnover.
-Identify departments with high attrition.
-Understand the impact of overtime and job satisfaction.
-Support data-driven employee retention strategies.
-Repository Structure
-HR-Employee-Attrition-Dashboard/
+## Dashboard Features
+
+### KPI Cards
+- Total Employees
+- Attrition Count
+- Attrition Rate (%)
+
+### Visualizations
+- Attrition Count by Department
+- Attrition Count by Age Group
+- Attrition Count by Job Satisfaction
+- Overtime Analysis
+- Employee Attrition Overview
+
+### Interactive Filters
+- Department
+- Age Group
+- Job Role
+
+## Key Insights
+- Research & Development department has the highest attrition.
+- Employees working overtime are more likely to leave.
+- Adult age group contributes the highest attrition count.
+- Lower job satisfaction is associated with higher attrition.
+- The overall attrition rate is 22.84%.
+
+## Project Workflow
+1. Imported the HR Attrition dataset into Power BI.
+2. Cleaned and transformed data using Power Query.
+3. Created Age Group categories.
+4. Developed DAX measures for KPIs.
+5. Built interactive visualizations.
+6. Added slicers for dynamic filtering.
+7. Generated insights from employee attrition trends.
+
+## Repository Structure
+
+SCT_DA_3/
 │
 ├── Dataset/
 │   └── WA_Fn-UseC_-HR-Employee-Attrition.csv
@@ -78,11 +68,10 @@ HR-Employee-Attrition-Dashboard/
 │   └── Dashboard.png
 │
 └── README.md
-Author
 
-Mouni
+## Internship Task
+**SkillCraft Technology – Data Analytics Internship**
+**Task 03: Interactive Visualization Dashboard**
 
-Internship Task
-
-SkillCraft Technology – Task 03
-Interactive Visualization Dashboard using Power BI.
+## Author
+**Mouni**
